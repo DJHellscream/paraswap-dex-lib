@@ -1,0 +1,83 @@
+[
+  {
+    "type": "function",
+    "name": "getReserves",
+    "inputs": [],
+    "outputs": [
+      { "type": "uint112", "name": "reserve0" },
+      { "type": "uint112", "name": "reserve1" },
+      { "type": "uint32", "name": "blockTimestampLast" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "token0",
+    "inputs": [],
+    "outputs": [{ "type": "address", "name": "" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "token1",
+    "inputs": [],
+    "outputs": [{ "type": "address", "name": "" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "totalSupply",
+    "inputs": [],
+    "outputs": [{ "type": "uint256", "name": "" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "swap",
+    "inputs": [
+      { "type": "uint256", "name": "amount0Out" },
+      { "type": "uint256", "name": "amount1Out" },
+      { "type": "address", "name": "to" },
+      { "type": "bytes", "name": "data" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "mint",
+    "inputs": [{ "type": "address", "name": "to" }],
+    "outputs": [{ "type": "uint256", "name": "liquidity" }],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "burn",
+    "inputs": [{ "type": "address", "name": "to" }],
+    "outputs": [
+      { "type": "uint256", "name": "amount0" },
+      { "type": "uint256", "name": "amount1" }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "Sync",
+    "inputs": [
+      { "type": "uint112", "name": "reserve0", "indexed": false },
+      { "type": "uint112", "name": "reserve1", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "Swap",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "amount0In", "indexed": false },
+      { "type": "uint256", "name": "amount1In", "indexed": false },
+      { "type": "uint256", "name": "amount0Out", "indexed": false },
+      { "type": "uint256", "name": "amount1Out", "indexed": false },
+      { "type": "address", "name": "to", "indexed": true }
+    ]
+  }
+]
